@@ -9,5 +9,3 @@ Address: Yeola, Nasik, Maharashtra
 Gmail: saurabhshinde028@gmail.com
 
 LinkedIn: www.linkedin.com/in/saurabh-shinde-2022-sms
-
-GitHub: https://github.com/saurabh-028
