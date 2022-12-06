@@ -1,5 +1,5 @@
 # Hi, I’m Saurabh 
- I'm a computer engineering student studying in the last year, Passionate about Artificial Intelligence, Machine Learning, Data Science. 
+ I'm a computer engineering, Passionate about Artificial Intelligence, Machine Learning, Data Science. 
  
  ## How to reach me 
  Mob. No: +91 7796350897
