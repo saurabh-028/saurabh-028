@@ -1,5 +1,5 @@
 # Hi, I’m Saurabh 
- I'm a computer engineering, Passionate about Artificial Intelligence, Machine Learning, Data Science. 
+Software Engineer at @Capgemini. Completed BE in Computers. Intersted in  AI, Data Science, Data Analysis. 
  
  ## How to reach me 
  Mob. No: +91 7796350897
