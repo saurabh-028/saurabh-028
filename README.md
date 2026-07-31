@@ -1,43 +1,74 @@
-# Hi, I’m Saurabh 👋
+<div align="center">
 
-**AI Engineer | Machine Learning & MLOps Enthusiast**
+# Hi, I'm Saurabh Shinde 👋
 
-Passionate about designing, developing, and deploying **scalable AI solutions**.  
-I specialize in **time-series forecasting, recommender systems, reinforcement learning, and RAG/LLM pipelines**, with hands-on experience in **MLOps workflows** using AWS, Docker, DVC, and CI/CD.
+### AI/ML Engineer building production RAG pipelines, agentic AI, and end-to-end ML systems
 
----
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1200&color=2563EB&center=true&vCenter=true&width=560&lines=RAG+Pipelines+%26+LLM+Applications;MLOps+%2F+AWS+%2F+Docker+%2F+MLflow;Dublin%2C+Ireland+%C2%B7+Stamp+1G+%C2%B7+No+Sponsorship+Needed)
 
-## 🔭 Current Focus
-- **SmartAQ** — Hybrid **LSTM + LightGBM** pipeline for city-scale air quality forecasting, deploying on **AWS SageMaker** with Step Functions and CloudWatch.
-- **LexiAI (Dissertation)** — Building a **RAG-based multilingual legal assistant** for Maharashtra with **LegalBERT, FAISS, and FastAPI**.
+[![Portfolio](https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=googlechrome&logoColor=white)](https://shindesaurabh.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabh-shinde-2022-sms/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:saurabhshinde028@gmail.com)
 
----
-
-## 🛠️ Tech Stack
-- **Programming & Databases:** Python, SQL, MySQL, PostgreSQL  
-- **ML/DL:** TensorFlow, Keras, LightGBM, Scikit-learn, (PyTorch - basic)  
-- **MLOps & Cloud:** AWS (SageMaker, S3, Lambda, Step Functions), Docker, DVC, MLflow, GitHub Actions  
-- **Data Engineering & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, Tableau, Power BI  
-- **APIs & Tools:** FastAPI, Flask, Streamlit, LangChain, Hugging Face, FAISS  
+</div>
 
 ---
 
-## 📌 Featured Projects
-- [**SmartAQ**](#) — Hybrid deep learning + gradient boosting for multi-city air quality forecasting  
-- [**NanoOptima**](#) — Recommender system for nanoparticle synthesis parameter optimization  
-- [**DroneNavRL**](#) — PPO vs DQN for dynamic drone delivery navigation  
-- [**AriseAI**](#) — RAG-powered conversational assistant for Bhagavad Gita  
-- [**LexiAI**](#) — Multilingual legal RAG assistant *(In Progress)*
+### About Me
+
+- 🎓 Completing an **MSc in Artificial Intelligence** at Dublin Business School (Jan 2025 – May 2026)
+- 💼 3+ years building production ML/AI systems — most recently as a **Graduate AI/ML Engineer at Capgemini**
+- 🧠 Focus areas: **RAG pipelines, agentic architectures, MLOps automation, and compliance-aware AI systems**
+- 🌍 Based in **Dublin, Ireland** — Stamp 1G, authorised to work full-time without employer sponsorship
+- 📫 Reach me at **saurabhshinde028@gmail.com**
 
 ---
 
-## 📫 How to Reach Me
-- 📱 **Phone:** +353 899437654  
-- 📍 **Location:** Dublin, Ireland  
-- 📧 **Email:** saurabhshinde028@gmail.com  
-- 🔗 **LinkedIn:** [linkedin.com/in/saurabh-shinde-2022-sms](https://www.linkedin.com/in/saurabh-shinde-2022-sms)  
-- 💻 **Portfolio:** *Coming Soon*
+### 🚀 Featured Project — ShastraShaw
+
+**Live multilingual legal AI platform** → [shastrashaw.online](https://shastrashaw.online)
+
+A production RAG pipeline for Indian law (criminal, traffic, rental, matrimonial), built on hybrid BM25 + FAISS
+dense retrieval (InLegalBERT) with automatic citation verification, serving English, Hindi, and Marathi.
+
+[![Repo](https://img.shields.io/badge/Source-rag--indian--law-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/saurabh-028/rag-indian-law)
+[![Live](https://img.shields.io/badge/Live-shastrashaw.online-10B981?style=flat-square&logo=vercel&logoColor=white)](https://shastrashaw.online)
 
 ---
 
-⭐ **Check out my pinned repositories below for my latest work!**
+### 🧰 Tech Stack
+
+![Skills](https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,flask,aws,docker,kubernetes,git,githubactions,bash,linux)
+
+**LLMs & GenAI:** GPT-4o · LangChain · RAG Pipelines · Agentic Architectures · AWS Bedrock · Prompt Engineering
+**Vector Search & NLP:** FAISS · InLegalBERT · MarianMT · Sentence Transformers · Semantic Search
+**MLOps & Cloud:** SageMaker · MLflow · DVC · Docker · GitHub Actions · Lambda · S3 · ECS · Step Functions
+
+---
+
+### 💼 Experience
+
+| Role | Company | Period |
+|---|---|---|
+| Graduate AI/ML Engineer | Capgemini | Dec 2022 – Dec 2024 |
+| Junior AI Engineer | Qriocity | Dec 2021 – Dec 2022 |
+| Data Science Intern | Future Ready Talent (Microsoft) | Feb 2022 – Apr 2022 |
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=saurabh-028&show_icons=true&theme=default&hide_border=true&count_private=true" alt="Saurabh's GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=saurabh-028&layout=compact&theme=default&hide_border=true" alt="Top languages" />
+
+</div>
+
+---
+
+<div align="center">
+
+**Open to ML Engineer / AI Engineer roles in Ireland** · [Portfolio](https://shindesaurabh.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/saurabh-shinde-2022-sms/)
+
+</div>
