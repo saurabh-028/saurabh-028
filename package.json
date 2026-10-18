@@ -1,0 +1,7 @@
+{
+  "name": "resume-sync",
+  "private": true,
+  "description": "Builds resume, README, LinkedIn copy and portfolio data from resume/resume.json",
+  "scripts": { "build": "node scripts/build.js" },
+  "dependencies": { "docx": "^9.7.1" }
+}
