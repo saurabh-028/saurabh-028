@@ -1,0 +1,90 @@
+name: Sync resume everywhere
+
+# Edit resume/resume.json, push to main, and everything below regenerates.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "resume/resume.json"
+      - "scripts/build.js"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-resume
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build resume, README, LinkedIn sheet, portfolio data
+        run: npm run build
+
+      - name: Convert resume to PDF
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends libreoffice-writer fonts-crosextra-carlito
+          soffice --headless --convert-to pdf --outdir dist dist/resume.docx
+          mv dist/resume.pdf "dist/Saurabh_Shinde_AI_Engineer_Resume.pdf"
+          mv dist/resume.docx "dist/Saurabh_Shinde_AI_Engineer_Resume.docx"
+
+      - name: Commit generated files (README, resume files, LinkedIn sheet, portfolio data)
+        run: |
+          git config user.name "resume-sync[bot]"
+          git config user.email "resume-sync[bot]@users.noreply.github.com"
+          git add README.md dist
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: sync resume outputs [skip ci]"
+            git push
+          fi
+
+      # Optional: push portfolio data to your portfolio repo.
+      # Needs repo secret PORTFOLIO_PAT (fine-grained token, Contents: write on that repo)
+      # and repo variable PORTFOLIO_REPO (for example saurabh-028/portfolio).
+      # Netlify then redeploys on its own. PORTFOLIO_DATA_PATH defaults to data/resume.json.
+      - name: Check portfolio sync is configured
+        id: portfolio
+        env:
+          PAT: ${{ secrets.PORTFOLIO_PAT }}
+          REPO: ${{ vars.PORTFOLIO_REPO }}
+        run: |
+          if [ -n "$PAT" ] && [ -n "$REPO" ]; then echo "enabled=true" >> "$GITHUB_OUTPUT"; else echo "Portfolio sync not configured, skipping."; fi
+
+      - name: Checkout portfolio repo
+        if: steps.portfolio.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.PORTFOLIO_REPO }}
+          token: ${{ secrets.PORTFOLIO_PAT }}
+          path: portfolio
+
+      - name: Push portfolio data
+        if: steps.portfolio.outputs.enabled == 'true'
+        env:
+          DATA_PATH: ${{ vars.PORTFOLIO_DATA_PATH }}
+        run: |
+          TARGET="portfolio/${DATA_PATH:-data/resume.json}"
+          mkdir -p "$(dirname "$TARGET")"
+          cp dist/portfolio.json "$TARGET"
+          cd portfolio
+          git config user.name "resume-sync[bot]"
+          git config user.email "resume-sync[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Portfolio already up to date."; else
+            git commit -m "chore: sync resume data"
+            git push
+          fi
