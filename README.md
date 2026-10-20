@@ -8,7 +8,7 @@
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1200&color=2563EB&center=true&vCenter=true&width=560&lines=RAG+Pipelines+%26+LLM+Applications%3BAgentic+AI+%26+LLM+Evaluation%3BMLOps+%2F+AWS+%2F+Docker+%2F+MLflow%3BDublin%2C+Ireland)
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=googlechrome&logoColor=white)](https://shindesaurabh.netlify.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabhshinde-2022-sms)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabh-shinde-2022-sms)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:saurabhshinde028@gmail.com)
 
 </div>
@@ -85,6 +85,6 @@ AI Engineer with **4+ years** of experience building, evaluating and deploying *
 
 <div align="center">
 
-**Open to AI Engineer / ML Engineer roles in Ireland** · [Portfolio](https://shindesaurabh.netlify.app) · [LinkedIn](https://www.linkedin.com/in/saurabhshinde-2022-sms)
+**Open to AI Engineer / ML Engineer roles in Ireland** · [Portfolio](https://shindesaurabh.netlify.app) · [LinkedIn](https://www.linkedin.com/in/saurabh-shinde-2022-sms)
 
 </div>
